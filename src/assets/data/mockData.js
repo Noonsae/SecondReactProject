@@ -1,4 +1,4 @@
-const mockData = [
+export const mockData = [
   {
     img_url:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
@@ -1230,5 +1230,3 @@ const mockData = [
       "에스퍼 타입의 전설의 포켓몬으로, 희귀하고 신비로운 능력을 가집니다.",
   },
 ];
-
-export default mockData;
