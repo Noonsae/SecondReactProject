@@ -1,16 +1,16 @@
 import PokemonCard from "./PokemonCard";
 
-const PokemonList = () => {
+const PokemonList = ({ mockData, handleSelectPokemon }) => {
   return (
-
     <>
-    
-      <div className="pokemon-list">
-        <PokemonCard />
-      </div>
-
+      {mockData.map((data) => (
+        <PokemonCard
+          key={data.id}
+          data={data}
+          handleSelectPokemon={handleSelectPokemon}
+        />
+      ))}
     </>
-
   );
 };
 

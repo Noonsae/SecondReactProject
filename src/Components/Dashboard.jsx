@@ -1,4 +1,7 @@
-const Dashboard = () => {
+const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
+  console.log(selectedPokemon);
+  console.log(mockData);
+  console.log(handleSelectPokemon);
   return (
     <>
       <div className="dashboard">
