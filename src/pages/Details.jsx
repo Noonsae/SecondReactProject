@@ -1,11 +1,22 @@
-import MoveToDexBtn from "../components/MoveToDexBtn";
+import { useNavigate } from "react-router-dom";
 
 const Details = () => {
+
+  const navigate = useNavigate();
+  const goToBackPage = () => {
+    navigate(-1);
+  }
+  
   return (
     <>
       <div className="Details-wrap">
         <h1>Pokemon_Details_Page</h1>
-        <MoveToDexBtn />
+        <button
+          type="button"
+          onClick={goToBackPage}
+        >
+          아 몰랑 다시 돌아가자 ㅇㅅㅇ
+        </button>
       </div>
     </>
   );
