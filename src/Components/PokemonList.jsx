@@ -3,6 +3,7 @@ import PokemonCard from './PokemonCard'
 const PokemonList = () => {
 
   return (
+    
     <>
 
     <div className='pokemon-list'>

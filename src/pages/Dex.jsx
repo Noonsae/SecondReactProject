@@ -1,18 +1,13 @@
-import Dashboard from "../Components/Dashboard"
-import PokemonList from "../Components/PokemonList"
+import Dashboard from "../components/Dashboard";
+import PokemonList from "../components/PokemonList";
 
 const Dex = () => {
-
-
   return (
-
     <div className="dex-warp">
-      <Dashboard/>
-      <PokemonList/>      
+      <Dashboard />
+      <PokemonList />
     </div>
+  );
+};
 
-  )
-
-}
-
-export default Dex
+export default Dex;

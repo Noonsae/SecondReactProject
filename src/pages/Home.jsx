@@ -1,14 +1,13 @@
-import MoveToDexBtn from "../Components/MoveToDexBtn";
+import MoveToDexBtn from "../components/MoveToDexBtn";
 
 const Home = () => {
-
-  
-
   return (
     <>
-      <div className="hmoe-wrap">
+      <div className="home-wrap">
         <h1>Pokemon</h1>
-        <MoveToDexBtn/>        
+        <MoveToDexBtn 
+          value = "포켓몬 도감 시작하기"
+        />
       </div>
     </>
   );
