@@ -1,17 +1,17 @@
-import PokemonCard from './PokemonCard'
+import PokemonCard from "./PokemonCard";
 
 const PokemonList = () => {
-
   return (
-    
-    <>
 
-    <div className='pokemon-list'>
-      <PokemonCard/>
-    </div>
+    <>
+    
+      <div className="pokemon-list">
+        <PokemonCard />
+      </div>
 
     </>
-  )
-}
 
-export default PokemonList
+  );
+};
+
+export default PokemonList;
