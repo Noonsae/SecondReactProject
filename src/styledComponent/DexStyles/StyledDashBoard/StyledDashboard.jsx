@@ -10,7 +10,7 @@ export const StyledDashboard = styled.div`
   text-align: center;
 
   & h2 {
-    margin-bottom: 20px;
-    color: #003366;
+    margin-bottom: 30px;    
+    color: #222;
   }  
 `;
