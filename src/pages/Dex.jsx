@@ -1,7 +1,8 @@
 import Dashboard from "../components/Dashboard";
-import PokemonList from "../components/PokemonList";
+import PokemonCardList from "../components/PokemonCardList";
 import { mockData } from "../assets/data/mockData";
 import { useState } from "react";
+import { DexWrap } from "../styledComponent/DexStyles/DexWrap";
 
 const Dex = () => {
   const [selectedPokemon, setSelectedPokemon] = useState("");
@@ -20,17 +21,18 @@ const Dex = () => {
   };
 
   return (
-    <div className="dex-warp">
+    <DexWrap>
       <Dashboard
         mockData={mockData}
         handleSelectPokemon={handleSelectPokemon}
         selectedPokemon={selectedPokemon}
       />
-      <PokemonList
+
+      <PokemonCardList
         mockData={mockData}
         handleSelectPokemon={handleSelectPokemon}
       />
-    </div>
+    </DexWrap>
   );
 };
 

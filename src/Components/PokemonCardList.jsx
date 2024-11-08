@@ -1,8 +1,9 @@
 import PokemonCard from "./PokemonCard";
+import { PokemonCardWrap } from "../styledComponent/DexStyles/PokemonCardWrap"
 
-const PokemonList = ({ mockData, handleSelectPokemon }) => {
+const PokemonCardList = ({ mockData, handleSelectPokemon }) => {
   return (
-    <>
+    <PokemonCardWrap>
       {mockData.map((data) => (
         <PokemonCard
           key={data.id}
@@ -10,8 +11,8 @@ const PokemonList = ({ mockData, handleSelectPokemon }) => {
           handleSelectPokemon={handleSelectPokemon}
         />
       ))}
-    </>
+    </PokemonCardWrap>
   );
 };
 
-export default PokemonList;
+export default PokemonCardList;
