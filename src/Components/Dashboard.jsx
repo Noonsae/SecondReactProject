@@ -1,6 +1,7 @@
 import { StyledDashboard } from "../styledComponent/DexStyles/StyledDashBoard/StyledDashboard";
 import { StyledMyPokemonWrap } from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemonWrap";
-import {StyledMyPokemon} from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemon";
+import { StyledMyPokemon } from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemon";
+import pokeball from "../assets/images/pokeball.png";
 
 const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
   console.log(selectedPokemon);
@@ -11,12 +12,24 @@ const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
       <StyledDashboard>
         <h2>나만의 포켓몬</h2>
         <StyledMyPokemonWrap>
-          <StyledMyPokemon></StyledMyPokemon>
-          <StyledMyPokemon></StyledMyPokemon>
-          <StyledMyPokemon></StyledMyPokemon>
-          <StyledMyPokemon></StyledMyPokemon>
-          <StyledMyPokemon></StyledMyPokemon>
-          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
+          <StyledMyPokemon>
+            <img src={pokeball} alt="Pokeball" />
+          </StyledMyPokemon>
         </StyledMyPokemonWrap>
       </StyledDashboard>
     </>

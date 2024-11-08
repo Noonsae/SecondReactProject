@@ -12,6 +12,5 @@ export const StyledDashboard = styled.div`
   & h2 {
     margin-bottom: 20px;
     color: #003366;
-  }
-  
+  }  
 `;
