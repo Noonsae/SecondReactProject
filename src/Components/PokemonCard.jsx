@@ -1,4 +1,4 @@
-import { StyledPokemonCard } from "../styledComponent/DexStyles/StyledPokemonCard";
+import { StyledPokemonCard } from "../styledComponent/DexStyles/StyledCardList/StyledPokemonCard";
 
 const PokemonCard = ({ data, handleSelectPokemon }) => {
   return (
@@ -14,4 +14,3 @@ const PokemonCard = ({ data, handleSelectPokemon }) => {
 };
 
 export default PokemonCard;
-

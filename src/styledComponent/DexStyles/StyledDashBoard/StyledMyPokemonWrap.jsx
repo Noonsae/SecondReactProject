@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
-export const PokemonCardWrap = styled.div`
-  width: 80%;
+export const StyledMyPokemonWrap = styled.div`
+  width: 100%;
+  height: 300px;
   margin: 0 auto;
-  padding: 10px 20px 0;
+  padding: 30px;
 
   background-color: #fbeaf6;
+  border-radius: 20px;
 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
 `;

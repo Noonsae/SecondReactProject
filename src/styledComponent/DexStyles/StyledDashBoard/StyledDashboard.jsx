@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 export const StyledDashboard = styled.div`
-  width: 80%;
-  height: 300px;
+  width: 80%; height:auto; 
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 30px 0;
   background-color: #fff3fb;
 
   font-size: 2.1em;
