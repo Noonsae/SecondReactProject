@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const MyPokemonWrap = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto;  
 
   padding: 30px;
-  background-color: #fff3fb;
+  background-color: #fbeaf6;
 
   display: flex;
   flex-direction: row;
