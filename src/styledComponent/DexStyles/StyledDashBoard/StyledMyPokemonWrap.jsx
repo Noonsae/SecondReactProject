@@ -6,7 +6,7 @@ export const StyledMyPokemonWrap = styled.div`
   margin: 0 auto;
   padding: 30px;
 
-  background-color: #fbeaf6;
+  background: linear-gradient(145deg, #ffe1ed, #fff3fb);
   border-radius: 20px;
 
   display: flex;
