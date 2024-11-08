@@ -7,7 +7,7 @@ const PokemonCard = ({ data, handleSelectPokemon }) => {
       <h3>{data.korean_name}</h3>
       <p>No. {String(data.id).padStart(3, "0")}</p>
       <button type="button" id={data.korean_name} onClick={handleSelectPokemon}>
-        추가
+        선택
       </button>
     </StyledPokemonCard>
   );
