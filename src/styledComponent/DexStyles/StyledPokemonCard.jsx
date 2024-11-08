@@ -39,7 +39,7 @@ export const StyledPokemonCard = styled.div`
 
   & button:hover {
     cursor: pointer;
-    background-color: #48b34c;    
+    background-color: #48b34c;
   }
 
   &:hover {
