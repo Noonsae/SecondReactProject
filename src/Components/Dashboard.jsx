@@ -1,5 +1,6 @@
 import { StyledDashboard } from "../styledComponent/DexStyles/StyledDashBoard/StyledDashboard";
-import { StyledMyPokemon } from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemon";
+import { StyledMyPokemonWrap } from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemonWrap";
+import {StyledMyPokemon} from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemon";
 
 const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
   console.log(selectedPokemon);
@@ -9,14 +10,14 @@ const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
     <>
       <StyledDashboard>
         <h2>나만의 포켓몬</h2>
-        <StyledMyPokemon>
-          <div className="my-pokemon"></div>
-          <div className="my-pokemon"></div>
-          <div className="my-pokemon"></div>
-          <div className="my-pokemon"></div>
-          <div className="my-pokemon"></div>
-          <div className="my-pokemon"></div>
-        </StyledMyPokemon>
+        <StyledMyPokemonWrap>
+          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon></StyledMyPokemon>
+          <StyledMyPokemon></StyledMyPokemon>
+        </StyledMyPokemonWrap>
       </StyledDashboard>
     </>
   );
