@@ -4,7 +4,7 @@ const Details = () => {
 
   const navigate = useNavigate();
   const goToBackPage = () => {
-    navigate(-1);
+    navigate("/dex");
   }
   
   return (
