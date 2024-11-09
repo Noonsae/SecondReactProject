@@ -1,5 +1,10 @@
 import { useNavigate } from "react-router-dom";
 
+import {StyledHomeWrap} from "../styledComponent/HomeStyles/StyledHomeWrap"
+import { StyledHomeTitle } from "../styledComponent/HomeStyles/StyledHomeTitle";
+import {StyledGoToDexBtn} from "../styledComponent/HomeStyles/StyledGoToDexBtn"
+
+
 const Home = () => {
   const navigate = useNavigate();
   const goToDexPage = () => {
@@ -8,15 +13,15 @@ const Home = () => {
 
   return (
     <>
-      <div className="home-wrap">
-        <h1>Pokemon</h1>
-        <button
+      <StyledHomeWrap>
+        <StyledHomeTitle>Logo</StyledHomeTitle>
+        <StyledGoToDexBtn
           type="button"
           onClick={goToDexPage}
         >
-          아 몰랑 덱으로 가자 ㅇㅅㅇ
-        </button>
-      </div>
+          &nbsp; 포켓몬 도감으로 이동하기
+        </StyledGoToDexBtn>
+      </StyledHomeWrap>
     </>
   );
 };
