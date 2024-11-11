@@ -7,23 +7,31 @@ import {StyledGoToBackBtn} from "../styledComponent/DexStyles/StyledDashBoard/St
 import { useNavigate } from "react-router-dom";
 
 const Dex = () => {
-  const [selectedPokemon, setSelectedPokemon] = useState("");
+  const [selectedPokemon, setSelectedPokemon] = useState([]);
+
   const navigate = useNavigate();
   const goToHomePage = () => {
     navigate("/");
   }
 
   const handleSelectPokemon = (e) => {
-    const pokemonName = e.target.id;
-    console.log(pokemonName);
 
-    const selectedPokemonData = mockData.find(
+    e.preventDefault();
+
+    if (selectedPokemon.length >5){
+      alert("문제발생알림")
+      return;
+    }
+    
+    const pokemonName = e.target.id;
+    
+    const newList = mockData.find(
       (pokemon) => pokemon.korean_name === pokemonName
     );
+    
+    setSelectedPokemon([...selectedPokemon, newList]);
 
-    if (selectedPokemonData) {
-      setSelectedPokemon(selectedPokemonData);
-    }
+    console.log(selectedPokemon);
   };
 
   return (
@@ -33,10 +41,10 @@ const Dex = () => {
       onClick={goToHomePage}>
         돌아가기
         </StyledGoToBackBtn>
-      <Dashboard
-        mockData={mockData}
+      <Dashboard        
         handleSelectPokemon={handleSelectPokemon}
         selectedPokemon={selectedPokemon}
+        setSelectedPokemon={setSelectedPokemon}
       />
 
       <PokemonCardList
