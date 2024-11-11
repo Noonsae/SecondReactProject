@@ -10,7 +10,8 @@ const Dashboard = ({ mockData, handleSelectPokemon, selectedPokemon }) => {
   return (
     <>
       <StyledDashboard>
-        <h2>나만의 포켓몬</h2>
+        <h2>포켓몬 도감</h2>
+        <p>포켓몬을 선택해주세요.</p>
         <StyledMyPokemonWrap>
           <StyledMyPokemon>
             <img src={pokeball} alt="Pokeball" />
