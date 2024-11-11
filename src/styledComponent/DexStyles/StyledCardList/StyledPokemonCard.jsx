@@ -16,13 +16,22 @@ export const StyledPokemonCard = styled.div`
 
   font-size: 1.3em;
 
+  & a {
+    cursor: pointer;
+  }
   & img {
     width: 100%;
     height: 150px;
   }
 
-  & p {
-    margin: 5px 0;
+  & span {
+    margin: 6px 0;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.1s;
   }
 
   & button {
@@ -39,12 +48,13 @@ export const StyledPokemonCard = styled.div`
 
   & button:hover {
     cursor: pointer;
-    background-color: #48b34c;
+    background-color: #3c973f;
   }
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.1);
-    transition: 0.1s;
+  & .selected {
+    background-color: #f43434;
+  }
+  & .selected:hover {
+    background-color: #cd2c2c;
   }
 `;
