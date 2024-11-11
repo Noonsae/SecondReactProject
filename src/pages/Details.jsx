@@ -6,16 +6,16 @@ const Details = () => {
   const goToBackPage = () => {
     navigate("/dex");
   }
-  
+
   return (
     <>
       <div className="Details-wrap">
-        <h1>Pokemon_Details_Page</h1>
+        <h2>Pokemon_Details_Page</h2>
         <button
           type="button"
           onClick={goToBackPage}
         >
-          아 몰랑 다시 돌아가자 ㅇㅅㅇ
+          도감페이지로 돌아가기
         </button>
       </div>
     </>
