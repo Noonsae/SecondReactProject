@@ -22,7 +22,6 @@ const Dex = () => {
       alert("포켓몬은 최대 6마리까지만 등록할 수 있습니다.");
       return;
     }
-
     const pokemonName = e.target.id;
 
     const newList = mockData.find(
@@ -81,7 +80,7 @@ const Dex = () => {
       />
 
       <PokemonCardList
-        mockData={mockData}
+        mockData={mockData}        
         handleSelectPokemon={handleSelectPokemon}
       />
     </StyledDexWrap>
