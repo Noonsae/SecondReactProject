@@ -1,0 +1,31 @@
+/* Reset */
+
+html {
+  font-size: 0.625em;
+  /* 기준점 :10PX */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+h1 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  border: none;
+}
+/* /Reset */
