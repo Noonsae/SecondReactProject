@@ -16,8 +16,11 @@ export const StyledPokemonCard = styled.div`
 
   font-size: 1.3em;
 
-  & a {
+  & a:hover {
     cursor: pointer;
+  }
+  & a.selected:hover {
+    cursor: auto;
   }
   & img {
     width: 100%;
@@ -51,10 +54,10 @@ export const StyledPokemonCard = styled.div`
     background-color: #3c973f;
   }
 
-  & .selected {
+  & button.selected {
     background-color: #f43434;
   }
-  & .selected:hover {
+  & button.selected:hover {
     background-color: #cd2c2c;
   }
 `;
