@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import {StyledHomeWrap} from "../styledComponent/HomeStyles/StyledHomeWrap"
-import { StyledHomeTitle } from "../styledComponent/HomeStyles/StyledHomeTitle";
+import {StyledHomeTitle} from "../styledComponent/HomeStyles/StyledHomeTitle";
 import {StyledGoToDexBtn} from "../styledComponent/HomeStyles/StyledGoToDexBtn"
 
 

@@ -8,8 +8,7 @@ const MyProvider = ({ children }) => {
   const [selectedPokemon, setSelectedPokemon] = useState([]);
   
   // 포켓몬 선택 추가
-  const handleSelectPokemon = (e) => {
-    e.preventDefault();
+  const handleSelectPokemon = (e) => {    
 
     if (selectedPokemon.length >= 6) {
       alert("포켓몬은 최대 6마리까지만 등록할 수 있습니다.");
@@ -40,7 +39,6 @@ const MyProvider = ({ children }) => {
 
   // 포켓몬 선택 해제 및 알림
   const handleDeletePokemon = (e) => {
-    e.preventDefault();
 
     const pokemonName = e.target.id;
 
@@ -49,12 +47,11 @@ const MyProvider = ({ children }) => {
     );
     
     setSelectedPokemon(filteringPokemon);
-    alert(`선택한 ${pokemonName}을 취소합니다.`);
+    alert(`${pokemonName}을(를) 취소합니다.`);
   };
 
   // 선택 포켓몬 초기화
-  const handleResetPokemon = (e) => {
-    e.preventDefault();
+  const handleResetPokemon = () => {
 
     setSelectedPokemon([]);
 
