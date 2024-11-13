@@ -3,9 +3,7 @@ import { StyledMyPokemonWrap } from "../styledComponent/DexStyles/StyledDashBoar
 import { StyledMyPokemon } from "../styledComponent/DexStyles/StyledDashBoard/StyledMyPokemon";
 import { StyledPokemonCard } from "../styledComponent/DexStyles/StyledCardList/StyledPokemonCard";
 import pokeball from "../assets/images/pokeball.png";
-
 import { StyledResetBtn } from "../styledComponent/DexStyles/StyledDashBoard/StyledResetBtn";
-
 import { MyContext } from "../context/MyContext";
 import { useContext } from "react";
 
