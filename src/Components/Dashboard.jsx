@@ -6,11 +6,13 @@ import pokeball from "../assets/images/pokeball.png";
 
 import { StyledResetBtn } from "../styledComponent/DexStyles/StyledDashBoard/StyledResetBtn";
 
-const Dashboard = ({
-  selectedPokemon,
-  handleDeletePokemon,
-  handleResetPokemon,
-}) => {
+import { MyContext } from "../context/MyContext";
+import { useContext } from "react";
+
+const Dashboard = () => {
+
+  const {selectedPokemon, handleDeletePokemon, handleResetPokemon} = useContext(MyContext);
+
   return (
     <StyledDashboard>
       <h2>포켓몬 도감</h2>
