@@ -7,7 +7,7 @@ const PokemonCard = ({ data, handleSelectPokemon }) => {
     const goToDetailPage = () => {
       navigate("/details");
     }
-
+    
   return (
     <StyledPokemonCard key={data.korean_name}>      
       <a onClick={goToDetailPage}>

@@ -9,11 +9,11 @@ export const StyledGoToBackBtn = styled.button`
   left: 50px;
   top: 30px;
   border-radius: 5px;
-  border: 2px solid #FFF9B1  ;
+  border: 3px solid #FDFD96  ;
   &:hover {
     cursor: pointer;   
     
-    background-color: #FFF9B1    ;
+    background-color: #FDFD96    ;
     border: none;
   }
 `
