@@ -4,12 +4,13 @@ import { StyledPokemonCard } from "../styledComponent/DexStyles/StyledCardList/S
 const PokemonCard = ({ data, handleSelectPokemon }) => {
   
     const navigate = useNavigate();
+
     const goToDetailPage = () => {
-      navigate("/details");
+      navigate(`/detail/${data.id}`);
     }
     
   return (
-    <StyledPokemonCard key={data.korean_name}>      
+    <StyledPokemonCard key={data.korean_name}>
       <a onClick={goToDetailPage}>
         <img src={data.img_url} alt={data.korean_name} />
       </a>
