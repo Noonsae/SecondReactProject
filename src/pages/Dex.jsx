@@ -1,9 +1,9 @@
-import Dashboard from "../components/Dashboard";
 import PokemonCardList from "../components/PokemonCardList";
 // import { useState } from "react";
 import { StyledDexWrap } from "../styledComponent/DexStyles/StyledDexWrap";
 import { StyledGoToBackBtn } from "../styledComponent/DexStyles/StyledDashBoard/StyledGoToBackBtn";
 import { useNavigate } from "react-router-dom";
+import Dashboard from "../components/Dashboard";
 
 const Dex = () => {
 
